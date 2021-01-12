@@ -234,6 +234,29 @@
   border: solid 1px #d3d3d3;
 }
 
+#team {
+  background-image: url(../images/team_background.jpg);
+  background-size: 18000px;
+  background-position: 49.5% 41%;
+  padding: 60px 200px;
+  padding: 60px 200px 10px 200px;
+}
+#team #team-title {
+  position: relative;
+}
+#team #team-title img {
+  position: absolute;
+  left: 50%;
+  margin-left: -221px;
+  top: 65px;
+}
+#team #chefs {
+  padding-top: 70px;
+}
+#team #chefs img {
+  border-bottom: 1px white solid;
+}
+
 h1, h2 {
   font-family: "Courgette", cursive;
 }
