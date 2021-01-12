@@ -261,6 +261,7 @@
 #book-blog {
   background-image: url(../images/main_bg.jpg);
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 #book-blog #book-blog-container {
   position: relative;
@@ -472,6 +473,45 @@
 #testimonials #testimonies .testimony-card .testimony-text .manager {
   color: #c93440;
   margin-bottom: 8px;
+}
+
+#contact {
+  background-image: url(../images/main_bg.jpg);
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+#contact #contact-title {
+  text-align: center;
+  position: relative;
+}
+#contact #contact-title img {
+  position: absolute;
+  left: 50%;
+  margin-left: -221px;
+  top: 60px;
+}
+#contact #contact-info {
+  background-color: #c93440;
+  width: 415px;
+  margin: 80px auto 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+}
+#contact #contact-info .contact-item {
+  padding: 15px 0;
+}
+#contact #contact-info .contact-item i {
+  font-size: 45px;
+}
+#contact #contact-info .contact-item a {
+  text-decoration: none;
+}
+#contact #contact-info .contact-item p {
+  margin: 0;
+}
+#contact #contact-info .contact-item #enveloppe {
+  font-size: 60px;
 }
 
 h1, h2 {

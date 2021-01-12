@@ -1,6 +1,7 @@
 #book-blog {
   background-image: url(../images/main_bg.jpg);
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 #book-blog #book-blog-container {
   position: relative;
