@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
                 <!-- link fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
                 <!-- link bootstrap -->
@@ -248,11 +250,134 @@
             <div>
                 <img src="./public/images/chef4.png" alt="">
                 <p class="text-center text-light">Lorem Ipsum</p>
+            </div> 
+        </div>
+    </section>
+    <section id="book-blog">
+        <div class="container" id="book-blog-container">
+            <img src="./public/images/box-left-top-grey.png" alt="" id="grey-top-left">
+            <img src="./public/images/box-right-top-grey.png" alt="" id="grey-top-right">
+            <img src="./public/images/box-bottom-left-grey.png" alt="" id="grey-bottom-left">
+            <img src="./public/images/box-bottom_right-grey.png" alt="" id="grey-bottom-right">
+            <div id="book">
+                <div id="book-title">
+                    <h2 class="text-center"><span>BOOK</span> your Table</h2>
+                    <img src="./public/images/decoration_line.png" alt="" id="book-blog-dl">
+                </div>
+                <form action="" id="book-form" class="mx-auto">
+                    <div>
+                        <p class="text-center">For any query please call us at: <a href="tel: 01234567890">+91-123456790</a></p>
+                        <div class="container" id="form-container">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="bg-light form-item" placeholder="Enter Full Name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="bg-light form-item" placeholder="Enter Id">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="tel" class="bg-light form-item" placeholder="Phone Number">
+                                </div>
+                                <div class="col">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light large">No Of Person</button>
+                                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split arrow" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="bg-light form-item" placeholder="Date">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="bg-light form-item" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light large">Occasion</button>
+                                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split arrow" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light large">Cuisine</button>
+                                        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split arrow" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="rounded-pill text-light" id="book-now">
+                            BOOK NOW
+                        </button>
+                    </div>
+                </form>  
             </div>
-            
-            
-            
-            
+            <div id="blog">
+                <div id="blog-title">
+                    <h2><span>OUR</span> Blog</h2>
+                    <img src="./public/images/decoration_line.png" alt="" id="blog-dl">
+                </div>
+                <div class="d-flex justify-content-around" id="blog-posts">
+                    <div class="blog-card">
+                        <img src="./public/images/blog_img1.jpg" alt="">
+                        <div class="post-info">
+                            <p><span class="number">12</span>April2017<span class="slash">/</span> <span class="number">20</span>Comment<span class="slash">/</span> <span class="number">35</span>Likes</p>
+                        </div>
+                        <div class="blog-text">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typsetting industry</p>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="./public/images/blog_img2.jpg" alt="">
+                        <div class="post-info">
+                            <p><span class="number">12</span>April2017<span class="slash">/</span> <span class="number">20</span>Comment <span class="slash">/</span> <span class="number">35</span>Likes</p>
+                        </div>
+                        <div class="blog-text">
+                            <h4>Lorem Ipsum</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typsetting industry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="rounded-pill text-light" id="know-more">
+                        KNOW MORE
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 </body>
