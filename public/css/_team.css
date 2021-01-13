@@ -21,4 +21,10 @@
   border-bottom: 1px white solid;
 }
 
+@media screen and (max-width: 930px) {
+  #chefs {
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=_team.css.map */

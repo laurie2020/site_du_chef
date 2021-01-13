@@ -1,5 +1,9 @@
+header {
+  background-image: url(../images/banner1.jpg);
+}
+
 #header {
-  position: absolute;
+  position: relative;
   height: 1012.8px;
   background-color: #000000d3;
   z-index: 10;
@@ -94,6 +98,19 @@
   position: absolute;
 }
 
+#carousel {
+  background-color: #000000d3;
+}
+
+@media screen and (max-width: 1205px) {
+  #nav-bar {
+    flex-direction: column;
+  }
+
+  #title {
+    padding-top: 30px;
+  }
+}
 #menu-story {
   background-image: url(../images/main_bg.jpg);
   padding-top: 50px;
@@ -258,6 +275,11 @@
   border-bottom: 1px white solid;
 }
 
+@media screen and (max-width: 930px) {
+  #chefs {
+    flex-direction: column;
+  }
+}
 #book-blog {
   background-image: url(../images/main_bg.jpg);
   padding-top: 50px;
@@ -427,6 +449,12 @@
   color: #4f575e;
 }
 
+@media screen and (max-width: 1275px) {
+  #blog-posts {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 #testimonials {
   background-image: url(../images/testimonials_background.jpg);
   background-size: 22000px;

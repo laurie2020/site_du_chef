@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/_team.sass"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;;AACA;EACI;;AACA;EACI;EACA;EACA;EACA;;AACR;EACI;;AACA;EACI","file":"_team.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/_team.sass"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;;AACA;EACI;;AACA;EACI;EACA;EACA;EACA;;AACR;EACI;;AACA;EACI;;;AACZ;EACI;IACI","file":"_team.css"}

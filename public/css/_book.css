@@ -167,4 +167,11 @@
   color: #4f575e;
 }
 
+@media screen and (max-width: 1275px) {
+  #blog-posts {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=_book.css.map */
