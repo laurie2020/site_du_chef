@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+  .container #menu .container .menu-col {
+    margin: 0 !important;
+  }
+  .container #menu .container .menu-col div {
+    width: 65%;
+  }
+  .container #menu .container .menu-col span {
+    padding: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=_media.css.map */

@@ -1,13 +1,17 @@
+@import "./_variables"
 header
     background-image: url(../images/banner1.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
 #header
     position: relative
-    height: 1012.8px
     background-color: #000000d3
     z-index: 10
     width: 100%
+    padding-top: 20px
+
     #nav-bar
-        position: absolute
         display: flex
         width: 100%
         justify-content: center
@@ -16,25 +20,12 @@ header
         nav
             padding-top: 35px
             ul
-                border-top: #f8f9fa 1px solid
-                border-bottom: #f8f9fa 1px solid
                 display: flex
                 align-items: center
                 list-style: none
-                margin-left: 40px
-                margin-right: 40px
-                padding-right: 32px
                 li
                     padding: 15px 25px
-                    // logo
-        div
-            img
-                margin: 0 10px
-                    // fin logo
-    #title
-        position: absolute
-        top: 287px
-        width: 100%
+    .title
         h1
             font-family: 'Courgette', cursive
             color: white
@@ -46,7 +37,7 @@ header
                 font-size: 80px
                 // bouttons header
         #pills
-            margin-top: 45px
+            margin-top: 8vh
             .badge
                 padding: 20px 35px
                 font-size: 15px
@@ -55,43 +46,64 @@ header
                     text-decoration: none
                     font-weight: normal
                 // fin bouttons header
-                // indicateurs rond
-.carousel-indicators
-    display: flex
-    align-items: center
-    margin-left: 300px
-    .active
-        background-color: #9e9e9e00 !important
-        border: white solid 3px !important
-        display: flex
-        justify-content: center
-        align-items: center
-        height: 15px
-        width: 15px
-        p
-            background-color: white
-            width: 10px
-            height: 10px
-
-    .rounded-circle
-        width: 15px
-        height: 15px
-                // fin indicateurs ronds
                 // deco fin header
 #deco
     background-image: url(../images/bottom_decoration_img.png)
     height: 15px
     width: 100%
     z-index: 10
-    bottom: 0%
-    position: absolute
                 // fin deco fin header
-#carousel
-    background-color: #000000d3
 
-@media screen and ( max-width: 1205px )
-    #nav-bar
-        flex-direction: column
-    #title
-      padding-top: 30px
-    
+.nav
+    padding-left: 50px
+    padding-right: 50px
+    ul
+        display: flex
+        align-items: flex-end
+        margin: 0
+        li
+            display: flex
+            justify-content: center
+            .nav-link
+                padding-top: 15px
+                padding-bottom: 15px
+                width: 9vw
+                display: flex
+                justify-content: center
+                
+.nav-link:hover
+    background-color: $pink
+li.nav-item
+    display: flex
+    align-items: center
+#logo
+    width: 200px
+    display: flex
+    justify-content: center
+#carouselExampleSlidesOnly
+    height: 75%
+    padding-top: 10%
+    .carousel-item
+        display: flex
+        justify-content: center
+        align-items: center
+#indicators
+    margin-top: 15%
+    display: block
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    button
+        height: 15px
+        width: 15px
+        border: white
+div.container-fluid
+    padding-left: 0
+    padding-right: 0
+#navbarSupportedContent
+    padding: 0
+.nav-sep
+    border-top: white solid 1px
+    border-bottom: white solid 1px
+
+        

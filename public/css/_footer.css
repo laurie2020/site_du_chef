@@ -4,9 +4,6 @@ footer {
   background-size: cover;
   color: white;
 }
-footer #gallery {
-  width: 380px;
-}
 footer #gallery .row {
   margin-bottom: 10px;
 }
@@ -31,7 +28,9 @@ footer .badge {
   background-color: #c93440;
   font-size: 16px;
   padding: 10px;
-  margin: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
 }
 
 #deco-footer {

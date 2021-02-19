@@ -1,13 +1,18 @@
 header {
   background-image: url(../images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+  background-position: center;
 }
 
 #header {
   position: relative;
-  height: 1012.8px;
+  height: 145vh;
   background-color: #000000d3;
   z-index: 10;
   width: 100%;
+  padding-top: 20px;
 }
 #header #nav-bar {
   position: absolute;
@@ -21,27 +26,14 @@ header {
   padding-top: 35px;
 }
 #header #nav-bar nav ul {
-  border-top: #f8f9fa 1px solid;
-  border-bottom: #f8f9fa 1px solid;
   display: flex;
   align-items: center;
   list-style: none;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-right: 32px;
 }
 #header #nav-bar nav ul li {
   padding: 15px 25px;
 }
-#header #nav-bar div img {
-  margin: 0 10px;
-}
-#header #title {
-  position: absolute;
-  top: 287px;
-  width: 100%;
-}
-#header #title h1 {
+#header .title h1 {
   font-family: "Courgette", cursive;
   color: white;
   font-size: 55px;
@@ -49,44 +41,20 @@ header {
   text-align: center;
   margin: 0 auto;
 }
-#header #title h1 span {
+#header .title h1 span {
   font-size: 80px;
 }
-#header #title #pills {
-  margin-top: 45px;
+#header .title #pills {
+  margin-top: 8vh;
 }
-#header #title #pills .badge {
+#header .title #pills .badge {
   padding: 20px 35px;
   font-size: 15px;
   margin: 10px;
 }
-#header #title #pills .badge a {
+#header .title #pills .badge a {
   text-decoration: none;
   font-weight: normal;
-}
-
-.carousel-indicators {
-  display: flex;
-  align-items: center;
-  margin-left: 300px;
-}
-.carousel-indicators .active {
-  background-color: #9e9e9e00 !important;
-  border: white solid 3px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15px;
-  width: 15px;
-}
-.carousel-indicators .active p {
-  background-color: white;
-  width: 10px;
-  height: 10px;
-}
-.carousel-indicators .rounded-circle {
-  width: 15px;
-  height: 15px;
 }
 
 #deco {
@@ -98,18 +66,87 @@ header {
   position: absolute;
 }
 
-#carousel {
-  background-color: #000000d3;
+.nav {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.nav ul {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+}
+.nav ul li {
+  display: flex;
+  justify-content: center;
+}
+.nav ul li .nav-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 9vw;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1205px) {
-  #nav-bar {
-    flex-direction: column;
-  }
+.nav-link:hover {
+  background-color: #c93440;
+}
 
-  #title {
-    padding-top: 30px;
-  }
+#nav-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+li.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#carouselExampleSlidesOnly {
+  height: 75%;
+  padding-top: 10%;
+}
+#carouselExampleSlidesOnly .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#indicators {
+  margin-top: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#indicators button {
+  height: 15px;
+  width: 15px;
+  border: white;
+}
+
+div.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#navbarSupportedContent {
+  padding: 0;
+}
+
+.nav-sep {
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
 }
 
 /*# sourceMappingURL=_header.css.map */

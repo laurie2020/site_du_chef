@@ -1,16 +1,18 @@
 header {
   background-image: url(../images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #header {
   position: relative;
-  height: 1012.8px;
   background-color: #000000d3;
   z-index: 10;
   width: 100%;
+  padding-top: 20px;
 }
 #header #nav-bar {
-  position: absolute;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -21,27 +23,14 @@ header {
   padding-top: 35px;
 }
 #header #nav-bar nav ul {
-  border-top: #f8f9fa 1px solid;
-  border-bottom: #f8f9fa 1px solid;
   display: flex;
   align-items: center;
   list-style: none;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-right: 32px;
 }
 #header #nav-bar nav ul li {
   padding: 15px 25px;
 }
-#header #nav-bar div img {
-  margin: 0 10px;
-}
-#header #title {
-  position: absolute;
-  top: 287px;
-  width: 100%;
-}
-#header #title h1 {
+#header .title h1 {
   font-family: "Courgette", cursive;
   color: white;
   font-size: 55px;
@@ -49,44 +38,20 @@ header {
   text-align: center;
   margin: 0 auto;
 }
-#header #title h1 span {
+#header .title h1 span {
   font-size: 80px;
 }
-#header #title #pills {
-  margin-top: 45px;
+#header .title #pills {
+  margin-top: 8vh;
 }
-#header #title #pills .badge {
+#header .title #pills .badge {
   padding: 20px 35px;
   font-size: 15px;
   margin: 10px;
 }
-#header #title #pills .badge a {
+#header .title #pills .badge a {
   text-decoration: none;
   font-weight: normal;
-}
-
-.carousel-indicators {
-  display: flex;
-  align-items: center;
-  margin-left: 300px;
-}
-.carousel-indicators .active {
-  background-color: #9e9e9e00 !important;
-  border: white solid 3px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15px;
-  width: 15px;
-}
-.carousel-indicators .active p {
-  background-color: white;
-  width: 10px;
-  height: 10px;
-}
-.carousel-indicators .rounded-circle {
-  width: 15px;
-  height: 15px;
 }
 
 #deco {
@@ -94,23 +59,81 @@ header {
   height: 15px;
   width: 100%;
   z-index: 10;
-  bottom: 0%;
-  position: absolute;
 }
 
-#carousel {
-  background-color: #000000d3;
+.nav {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.nav ul {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+}
+.nav ul li {
+  display: flex;
+  justify-content: center;
+}
+.nav ul li .nav-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 9vw;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1205px) {
-  #nav-bar {
-    flex-direction: column;
-  }
-
-  #title {
-    padding-top: 30px;
-  }
+.nav-link:hover {
+  background-color: #c93440;
 }
+
+li.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#carouselExampleSlidesOnly {
+  height: 75%;
+  padding-top: 10%;
+}
+#carouselExampleSlidesOnly .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#indicators {
+  margin-top: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#indicators button {
+  height: 15px;
+  width: 15px;
+  border: white;
+}
+
+div.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#navbarSupportedContent {
+  padding: 0;
+}
+
+.nav-sep {
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+}
+
 #menu-story {
   background-image: url(../images/main_bg.jpg);
   padding-top: 50px;
@@ -145,14 +168,12 @@ header {
   right: 0;
 }
 #menu-story .container #story #story-title {
-  position: relative;
   text-align: center;
+  margin: 0;
 }
 #menu-story .container #story #story-title img {
-  position: absolute;
-  left: 50%;
-  top: 65px;
-  margin-left: -221px;
+  display: block;
+  margin: 0 auto;
 }
 #menu-story .container #story #story-text {
   margin-top: 70px;
@@ -176,32 +197,32 @@ header {
   top: 65px;
   margin-left: -221px;
 }
-#menu-story .container #menu #menu-list {
+#menu-story .container #menu .menu-list {
   margin-top: 40px;
 }
-#menu-story .container #menu #menu-list #menu-nav ul {
+#menu-story .container #menu .menu-list #menu-nav ul {
   list-style: none;
   padding-left: 5px;
   border-right: 1px solid #d3d3d3;
 }
-#menu-story .container #menu #menu-list #menu-nav ul #breakfast {
+#menu-story .container #menu .menu-list #menu-nav ul #breakfast {
   border-right: 5px #c93440 solid;
   margin-right: 0;
 }
-#menu-story .container #menu #menu-list #menu-nav ul li {
+#menu-story .container #menu .menu-list #menu-nav ul li {
   padding: 15px 60px;
   border-bottom: 1px solid #d3d3d3;
   text-align: center;
   margin-right: 5px;
 }
-#menu-story .container #menu #menu-list #menu-nav ul li #breakfast-icon {
+#menu-story .container #menu .menu-list #menu-nav ul li #breakfast-icon {
   color: #c93440;
 }
-#menu-story .container #menu #menu-list #menu-nav ul li i {
+#menu-story .container #menu .menu-list #menu-nav ul li i {
   font-size: 60px;
   color: #d3d3d3;
 }
-#menu-story .container #menu #menu-list #menu-nav ul li h3 {
+#menu-story .container #menu .menu-list #menu-nav ul li h3 {
   font-family: "Courgette", cursive;
 }
 #menu-story .container #menu .container {
@@ -209,30 +230,33 @@ header {
   padding-top: 7px;
   margin-bottom: 50px;
 }
-#menu-story .container #menu .container .col {
+#menu-story .container #menu .container .menu-col {
   align-items: center;
   justify-content: space-between;
   font-size: 16px;
   padding: 10px 0;
   border-bottom: dotted #d3d3d3 2px;
-  margin: 0 20px;
+  margin-left: 20px;
 }
-#menu-story .container #menu .container .col img {
+#menu-story .container #menu .container .menu-col img {
   border: 4px solid #d3d3d3;
 }
-#menu-story .container #menu .container .col div {
+#menu-story .container #menu .container .menu-col div {
   padding-left: 20px;
 }
-#menu-story .container #menu .container .col div .dish-name {
+#menu-story .container #menu .container .menu-col div .dish-name {
   color: black;
   font-weight: 700;
   margin: 0;
+  font-size: 14px;
 }
-#menu-story .container #menu .container .col div .dish-description {
+#menu-story .container #menu .container .menu-col div .dish-description {
   margin: 0;
-  color: #535b63;
+  color: #1d1d1d;
+  font-weight: normal;
+  font-size: 13px;
 }
-#menu-story .container #menu .container .col span {
+#menu-story .container #menu .container .menu-col span {
   padding: 0 20px;
   background-color: #eeeded;
   font-size: 20px;
@@ -252,34 +276,36 @@ header {
   border: solid 1px #d3d3d3;
 }
 
+@media screen and (min-width: 992px) {
+  .menu-list {
+    display: flex;
+  }
+
+  .menu-col {
+    margin: 0;
+  }
+}
 #team {
   background-image: url(../images/team_background.jpg);
   background-size: 18000px;
   background-position: 49.5% 41%;
-  padding: 60px 200px;
-  padding: 60px 200px 10px 200px;
+  padding: 60px 15% 10px 15%;
 }
-#team #team-title {
-  position: relative;
+#team #team-title h2 {
+  margin: 0;
 }
 #team #team-title img {
-  position: absolute;
-  left: 50%;
-  margin-left: -221px;
-  top: 65px;
+  display: block;
+  margin: 0 auto;
 }
 #team #chefs {
   padding-top: 70px;
+  flex-direction: column;
 }
 #team #chefs img {
   border-bottom: 1px white solid;
 }
 
-@media screen and (max-width: 930px) {
-  #chefs {
-    flex-direction: column;
-  }
-}
 #book-blog {
   background-image: url(../images/main_bg.jpg);
   padding-top: 50px;
@@ -312,22 +338,22 @@ header {
   bottom: 0;
   right: 0;
 }
-#book-blog #book-blog-container #book #book-title {
-  position: relative;
+#book-blog #book-blog-container #book #book-title h2 {
+  margin: 0;
 }
 #book-blog #book-blog-container #book #book-title img {
-  position: absolute;
-  left: 50%;
-  margin-left: -221px;
-  top: 70px;
+  display: block;
+  margin: 0 auto;
 }
 #book-blog #book-blog-container #book #book-form {
   margin-top: 100px;
   background-image: url(../images/book_table_bg.jpg);
-  width: 770px;
-  height: 564px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60%;
   border-radius: 20px;
-  padding: 50px 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 #book-blog #book-blog-container #book #book-form p {
   color: #d3d3d3;
@@ -356,7 +382,7 @@ header {
   height: 45px;
   border-radius: 15px;
   border: none;
-  padding-left: 10px;
+  margin: 0;
 }
 
 #book-blog ::placeholder {
@@ -374,7 +400,7 @@ header {
   background-color: #c93440;
   border: none;
   padding: 15px 30px;
-  margin-top: 60px;
+  margin-top: 10%;
 }
 .button #know-more {
   background-color: #c93440;
@@ -384,45 +410,40 @@ header {
 
 #blog {
   padding-top: 60px;
-}
-#blog #blog-title {
-  position: relative;
+  padding-bottom: 60px;
 }
 #blog #blog-title h2 {
   text-align: center;
+  margin: 0;
 }
 #blog #blog-title img {
-  position: absolute;
-  left: 50%;
-  margin-left: -221px;
-  top: 65px;
+  display: block;
+  margin: 0 auto;
 }
 #blog #blog-posts {
   width: 81%;
-  margin: 80px auto;
-  padding-left: 25px;
+  margin: 10% auto;
 }
 #blog #blog-posts .blog-card {
   position: relative;
+  margin: 0 7px;
 }
 #blog #blog-posts .blog-card img {
   border-radius: 20px;
   border: 5px solid #d3d3d3;
+  display: block;
+  margin: 0 auto;
 }
 #blog #blog-posts .blog-card .post-info {
   background-color: #c93440;
   color: white;
-  position: absolute;
-  bottom: 115px;
-  left: 50%;
-  margin-left: -232px;
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
-  top: 245px;
-  padding: 10px 40px;
-  border-radius: 20px;
-  height: 69px;
-  font-weight: 100;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: normal;
+  width: 90%;
+  margin: 0 auto;
+  transform: translateY(-30px);
 }
 #blog #blog-posts .blog-card .post-info p {
   margin: 0;
@@ -436,7 +457,6 @@ header {
   font-weight: 300;
 }
 #blog #blog-posts .blog-card .blog-text {
-  padding-top: 40px;
   padding-right: 15px;
   padding-left: 30px;
 }
@@ -445,7 +465,6 @@ header {
   font-weight: 700;
 }
 #blog #blog-posts .blog-card .blog-text p {
-  margin-top: 15px;
   color: #4f575e;
 }
 
@@ -455,6 +474,52 @@ header {
     justify-content: center;
   }
 }
+@media screen and (max-width: 1399px) {
+  #form-container .col-md {
+    padding-bottom: 20px;
+  }
+}
+#form-container {
+  width: 80%;
+  padding: 0 40px;
+}
+#form-container .col-md {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .large {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 172px) {
+  #blog-posts {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #book-blog-container #book #book-form .large {
+    width: 150px !important;
+  }
+  #book-blog-container #book #book-form .form-item {
+    width: 180px !important;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1276px) {
+  #blog-posts .blog-card .post-info {
+    width: 60% !important;
+  }
+  #blog-posts .blog-card .blog-text {
+    margin-left: 17%;
+    margin-right: 17%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #blog-posts .blog-card .post-info {
+    width: 95% !important;
+  }
+}
 #testimonials {
   background-image: url(../images/testimonials_background.jpg);
   background-size: 22000px;
@@ -462,24 +527,21 @@ header {
   padding-bottom: 40px;
   padding-top: 80px;
 }
-#testimonials #testimonials-title {
-  position: relative;
-}
 #testimonials #testimonials-title h2 {
   text-align: center;
+  margin: 0;
 }
 #testimonials #testimonials-title img {
-  position: absolute;
-  left: 50%;
-  margin-left: -221px;
-  top: 65px;
+  display: block;
+  margin: 0 auto !important;
 }
 #testimonials #testimonies {
-  width: 80%;
-  margin: 100px auto 0 auto;
+  margin: 100px 0;
 }
 #testimonials #testimonies .testimony-card {
   margin: 0 15px;
+  padding: 0;
+  width: 50%;
 }
 #testimonials #testimonies .testimony-card #image-left {
   margin-right: 30px;
@@ -494,9 +556,11 @@ header {
   border: 1px white solid;
   border-radius: 15px;
   padding: 15px 5px 10px 5px;
+  height: 100%;
 }
 #testimonials #testimonies .testimony-card .testimony-text .test-blog {
   margin: 0;
+  font-weight: normal;
 }
 #testimonials #testimonies .testimony-card .testimony-text .manager {
   color: #c93440;
@@ -512,11 +576,11 @@ header {
   text-align: center;
   position: relative;
 }
+#contact #contact-title h2 {
+  margin: 0;
+}
 #contact #contact-title img {
-  position: absolute;
-  left: 50%;
-  margin-left: -221px;
-  top: 60px;
+  margin: 0 auto;
 }
 #contact #contact-info {
   background-color: #c93440;
@@ -548,9 +612,6 @@ footer {
   background-size: cover;
   color: white;
 }
-footer #gallery {
-  width: 380px;
-}
 footer #gallery .row {
   margin-bottom: 10px;
 }
@@ -575,7 +636,9 @@ footer .badge {
   background-color: #c93440;
   font-size: 16px;
   padding: 10px;
-  margin: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
 }
 
 #deco-footer {
@@ -593,6 +656,64 @@ footer .badge {
   height: 80px;
 }
 
+@media screen and (max-width: 768px) {
+  .container #menu .container .menu-col {
+    margin: 0 !important;
+  }
+  .container #menu .container .menu-col div {
+    width: 65%;
+  }
+  .container #menu .container .menu-col span {
+    padding: 0 !important;
+  }
+
+  #testimonies .testimony-card {
+    flex-direction: column;
+  }
+  #testimonies .testimony-card #image-left {
+    margin: 0 auto !important;
+  }
+  #testimonies .testimony-card #image-right {
+    margin: 0 auto !important;
+  }
+  #testimonies #testimony-bottom {
+    flex-direction: column-reverse;
+    margin-top: 20px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-sep {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #testimony-tab {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  #contact #contact-info {
+    width: 100%;
+  }
+
+  #header .title h1 {
+    font-size: 40px;
+  }
+  #header .title h1 span {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 638px) {
+  #header .title h1 {
+    margin: 0;
+    width: 100%;
+  }
+}
 h1, h2 {
   font-family: "Courgette", cursive;
 }

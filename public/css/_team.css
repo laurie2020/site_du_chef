@@ -2,29 +2,21 @@
   background-image: url(../images/team_background.jpg);
   background-size: 18000px;
   background-position: 49.5% 41%;
-  padding: 60px 200px;
-  padding: 60px 200px 10px 200px;
+  padding: 60px 15% 10px 15%;
 }
-#team #team-title {
-  position: relative;
+#team #team-title h2 {
+  margin: 0;
 }
 #team #team-title img {
-  position: absolute;
-  left: 50%;
-  margin-left: -221px;
-  top: 65px;
+  display: block;
+  margin: 0 auto;
 }
 #team #chefs {
   padding-top: 70px;
+  flex-direction: column;
 }
 #team #chefs img {
   border-bottom: 1px white solid;
-}
-
-@media screen and (max-width: 930px) {
-  #chefs {
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=_team.css.map */
