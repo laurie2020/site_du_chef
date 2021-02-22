@@ -205,18 +205,18 @@ div.container-fluid {
   padding-left: 5px;
   border-right: 1px solid #d3d3d3;
 }
-#menu-story .container #menu .menu-list #menu-nav ul #breakfast {
+#menu-story .container #menu .menu-list #menu-nav ul li:hover {
   border-right: 5px #c93440 solid;
   margin-right: 0;
+}
+#menu-story .container #menu .menu-list #menu-nav ul li:hover i {
+  color: #c93440;
 }
 #menu-story .container #menu .menu-list #menu-nav ul li {
   padding: 15px 60px;
   border-bottom: 1px solid #d3d3d3;
   text-align: center;
   margin-right: 5px;
-}
-#menu-story .container #menu .menu-list #menu-nav ul li #breakfast-icon {
-  color: #c93440;
 }
 #menu-story .container #menu .menu-list #menu-nav ul li i {
   font-size: 60px;
@@ -264,12 +264,6 @@ div.container-fluid {
   color: #c93440;
   margin-right: 20px;
   margin-right: 0;
-}
-
-#decoration-line-bottom {
-  position: absolute;
-  left: 50%;
-  margin-left: -221px;
 }
 
 #menu-container {
